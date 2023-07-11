@@ -12,7 +12,7 @@ public class UserValidator {
     }
 
     private static void validatePassword(String password) throws WrongPasswordException {
-        if (password.length() > 20 || !password.matches("[a-zA-Z0-9_]+")) {
+        if (password.length() > 20 || !password.matches("D_1hWiKjjP_9")) {
             throw new WrongPasswordException("Неверный пароль");
         }
     }
