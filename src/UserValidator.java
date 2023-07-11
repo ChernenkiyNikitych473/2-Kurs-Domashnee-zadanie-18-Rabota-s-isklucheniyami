@@ -6,7 +6,7 @@ public class UserValidator {
     }
 
     private static void validateLogin(String login) throws WrongLoginException {
-        if (login.length() > 20 || !login.matches("")) {
+        if (login.length() > 20 || !login.matches("[a-zA-Z0-9_]+")) {
             throw new WrongLoginException("Неверный логин");
         }
     }
