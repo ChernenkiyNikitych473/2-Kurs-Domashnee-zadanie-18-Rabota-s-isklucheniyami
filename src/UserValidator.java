@@ -9,13 +9,13 @@ public class UserValidator {
     }
     private static void validateLogin(String login) throws WrongLoginException {
 
-        if (login.length() > 20 || !login.matches("REGEX")) {
+        if (login.length() > 20 || !login.matches(REGEX)) {
             throw new WrongLoginException("Неверный логин");
 
         }
     }
     private static void validatePassword(String password) throws WrongPasswordException {
-        if (password.length() > 20 || !password.matches("REGEX")) {
+        if (password.length() > 20 || !password.matches(REGEX)) {
             throw new WrongPasswordException("Неверный пароль");
 
         }
